@@ -12,7 +12,7 @@ import itsamatch from '../assets/itsamatch.png'
 
 export default function Main({ match }) {
     const [users, setUsers] = useState([]);
-    const [matchDev, setMatchDev] = userState(null);
+    const [matchDev, setMatchDev] = useState(null);
 
     useEffect(() => {
         async function loadUsers() {
